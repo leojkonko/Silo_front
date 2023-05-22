@@ -1,0 +1,10 @@
+.produtos-detalhe-swiper,
+.relacionados-swiper {
+    position: initial !important;
+}
+
+@media(max-width: 992px) {
+    .produtos-detalhe-swiper {
+        position: relative !important;
+    }
+}

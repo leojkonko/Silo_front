@@ -126,33 +126,37 @@
 </div>
 
 
-<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasHeader" aria-labelledby="offcanvasHeaderLabel">
+<div class="offcanvas offcanvas-start bg-primary" tabindex="-1" id="offcanvasHeader" aria-labelledby="offcanvasHeaderLabel">
     <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasHeaderLabel">Menu</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasHeader" aria-label="Close"></button>
+        <button type="button" class="button-unstyled text-reset text-white" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasHeader" aria-label="Close">
+            <svg class="me-0-50" width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 1L1 6M1 6L6 11M1 6H11" stroke="white"/>
+            </svg>  
+            Voltar          
+        </button>
     </div>
     <div class="offcanvas-body position-relative">
         <div>
-            <ul class="m-0">
-                <li>
-                    <a class="p-24 p-700 text-decoration-none" href="{{ route_lang('home') }}">Home</a>
+            <ul class="m-0 list-unstyled ps-2">
+                <li class="mt-1">
+                    <a class="p-26 p-700 text-decoration-none text-white" href="{{ route_lang('home') }}">Home</a>
                 </li>
-                <li>
-                    <a class="p-24 p-700 text-decoration-none" href="{{ route_lang('company') }}">Sobre a empresa</a>
+                <li class="mt-1">
+                    <a class="p-26 p-700 text-decoration-none text-white" href="{{ route_lang('company') }}">Sobre a empresa</a>
                 </li>
-                <li>
-                    <a href="" class="p-24 p-700 text-decoration-none"
+                <li class="mt-1">
+                    <a href="" class="p-26 p-700 text-decoration-none text-white"
                                 type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
                     Produtos</a>
                 </li>
-                <li>
-                    <a class="p-24 p-700 text-decoration-none" href="{{ route_lang('contact') }}">Contato</a>
+                <li class="mt-1">
+                    <a class="p-26 p-700 text-decoration-none text-white" href="{{ route_lang('contact') }}">Contato</a>
                 </li>
-                <div class="infos-header ps-2">
+                <div class="infos-header ps-2  position-absolute bottom-0 mb-4">
                     <a href="">
-                        <img src="{{ asset('front/images/logos/logo.png') }}" alt="">
+                        <img src="{{ asset('front/images/logos/logo.svg') }}" alt="">
                     </a>
-                    <div class="d-flex gap-1 ps-1 pt-2">
+                    <div class="d-flex gap-1 ps-2 pt-2">
                         <a href="" target="_blank">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
